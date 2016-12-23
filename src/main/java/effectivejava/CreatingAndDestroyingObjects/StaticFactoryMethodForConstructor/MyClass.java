@@ -12,6 +12,10 @@ public class MyClass implements MyInterface{
         return new MySecondClass();
     }
 
+    public static MyInterface getSpecificInstance(String whichInstance){
+        return whichInstance.equals("second") ? new MySecondClass() : new MyClass();
+    }
+
     @Override
     public String toString(){
         return "Instance of " + getClass().getSimpleName();
@@ -20,5 +24,9 @@ public class MyClass implements MyInterface{
     public static void main(String[] args){
         System.out.println(MyClass.getInstance().toString());
         System.out.println(MyClass.getOtherInstance().toString());
+
+        System.out.println("\nGetting specific instances");
+        System.out.println(MyClass.getSpecificInstance("first").toString());
+        System.out.println(MyClass.getSpecificInstance("second").toString());
     }
 }
