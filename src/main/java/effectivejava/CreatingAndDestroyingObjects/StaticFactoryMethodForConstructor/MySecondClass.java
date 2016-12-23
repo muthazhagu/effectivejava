@@ -3,9 +3,9 @@ package effectivejava.CreatingAndDestroyingObjects.StaticFactoryMethodForConstru
 /**
  * Created by muthu on 12/22/16.
  */
-class MySecondClass implements MyInterface{
+class MySecondClass implements MyInterface {
     @Override
-    public String toString(){
+    public String getMyName() {
         return "Instance of " + getClass().getSimpleName();
     }
 }
