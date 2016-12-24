@@ -7,11 +7,11 @@ public class MyClasses {
     private MyClasses() {
     }
 
-    static MyInterface getMyXClass(){
+    static MyInterface getMyXClass() {
         return new MyXClass();
     }
 
-    static MyInterface getMyYClass(){
+    static MyInterface getMyYClass() {
         return new MyYClass();
     }
 
