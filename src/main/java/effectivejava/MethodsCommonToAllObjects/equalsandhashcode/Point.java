@@ -1,4 +1,4 @@
-package effectivejava.MethodsCommonToAllObjects;
+package effectivejava.MethodsCommonToAllObjects.equalsandhashcode;
 
 /**
  * Created by muthu on 12/24/16.
