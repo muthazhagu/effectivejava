@@ -6,10 +6,11 @@ package effectivejava.CreatingAndDestroyingObjects.Singleton;
 public class SingletonPublicStaticFieldClass {
     public static final SingletonPublicStaticFieldClass INSTANCE = new SingletonPublicStaticFieldClass();
 
-    private SingletonPublicStaticFieldClass(){}
+    private SingletonPublicStaticFieldClass() {
+    }
 
     @Override
-    public String toString(){
+    public String toString() {
         return getClass().getSimpleName();
     }
 }

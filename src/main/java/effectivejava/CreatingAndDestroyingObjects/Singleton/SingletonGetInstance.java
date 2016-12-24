@@ -6,14 +6,15 @@ package effectivejava.CreatingAndDestroyingObjects.Singleton;
 public class SingletonGetInstance {
     private static final SingletonGetInstance INSTANCE = new SingletonGetInstance();
 
-    private SingletonGetInstance(){}
+    private SingletonGetInstance() {
+    }
 
-    public static SingletonGetInstance getInstance(){
+    public static SingletonGetInstance getInstance() {
         return INSTANCE;
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return getClass().getSimpleName();
     }
 }

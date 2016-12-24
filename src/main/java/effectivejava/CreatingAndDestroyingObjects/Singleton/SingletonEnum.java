@@ -7,7 +7,7 @@ public enum SingletonEnum {
     INSTANCE;
 
     @Override
-    public String toString(){
+    public String toString() {
         return getClass().getSimpleName();
     }
 }
