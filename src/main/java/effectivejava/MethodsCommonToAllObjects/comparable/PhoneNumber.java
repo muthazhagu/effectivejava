@@ -3,12 +3,12 @@ package effectivejava.MethodsCommonToAllObjects.comparable;
 /**
  * Created by muthu on 12/25/16.
  */
-public class PhoneNumber implements Comparable<PhoneNumber> {
+class PhoneNumber implements Comparable<PhoneNumber> {
     private final int areaCode;
     private final int prefix;
     private final int number;
 
-    public PhoneNumber(int areaCode, int prefix, int number) {
+    PhoneNumber(int areaCode, int prefix, int number) {
         if (rangeCheck(areaCode, 0, 999)) {
             this.areaCode = areaCode;
         } else {
